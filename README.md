@@ -27,12 +27,11 @@ The PCB is designed to show off my first ever pcb build. This has been a long jo
 Here's my PCB! It was made in KiCad.
 
 **Schematic**  
-![enter image description here](https://drive.google.com/file/d/18cYXN9dBHsvvs-i5QxGHF7S5kgjKLjsX/view?usp=sharing)
-https://drive.google.com/file/d/18cYXN9dBHsvvs-i5QxGHF7S5kgjKLjsX/view?usp=sharing
+<img src=IMAGES/SchemPic alt="Schematic" width="500"/>
+
 
 **PCB Layout**  
-![(Add your PCB layout image here)](https://drive.google.com/file/d/1or-7hfC62VdfGTGTljvyo4kLrXyLFp2b/view?usp=sharing)
-https://drive.google.com/file/d/1or-7hfC62VdfGTGTljvyo4kLrXyLFp2b/view?usp=sharing
+
 
 I used standard MX-style footprints for the keyswitches. A key design feature is the 3x3 key matrix using 1N4148 diodes, which allows 9 keys to be read using only 6 GPIO pins.
 
