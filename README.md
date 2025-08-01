@@ -22,6 +22,7 @@ It serves as a comprehensive example piece/reference for a feature-packed macrop
 
 **CAD Model:**  
 The PCB is designed to show off my first ever pcb build. This has been a long journey and I am quite proud of my pcb.
+<img src=IMAGES/CADpic alt="CAD File" width="500"/>
 
 **PCB**  
 Here's my PCB! It was made in KiCad.
@@ -31,7 +32,7 @@ Here's my PCB! It was made in KiCad.
 
 
 **PCB Layout**  
-
+<img src=IMAGES/PCBpic alt="PCB" width="500"/>
 
 I used standard MX-style footprints for the keyswitches. A key design feature is the 3x3 key matrix using 1N4148 diodes, which allows 9 keys to be read using only 6 GPIO pins.
 
