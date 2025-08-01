@@ -1,42 +1,73 @@
-The VROOOOMpad
-The VROOOOMpad is a high-performance, 9-key macropad designed to be the control panel for your digital workflow. With a tactile rotary encoder, a dashboard-like OLED display, and fully addressable RGB "underglow," this pad is built to accelerate your most common tasks and shortcuts.
-This project serves as a reference for building a feature-rich macropad, combining a key matrix, per-key RGB, an encoder, and a display, all powered by the supercharged XIAO RP2040 and the easy-to-modify KMK firmware.
-Features:
-Custom-Tuned with KMK Firmware! No complex build environment needed. Just pop the hood and edit code.py to remap your engine.
-A crisp 128x32 OLED Display acts as your digital dashboard, showing vital stats like your current 'gear' (layer).
-A tactile EC11 Rotary Encoder for precision control—perfect for scrubbing timelines or fine-tuning volume.
-A full 4x4 grid of SK6812 'Underglow' LEDs, providing per-key lighting that acts as a tachometer for your tasks.
-Nine fully programmable keys in a high-response 3x3 matrix—your launch buttons for any command.
-Chassis (CAD Model):
-The PCB is the engine block of the VROOOOMpad, designed to be mounted securely into a custom chassis. The mounting holes are placed for M3 bolts, making it perfect for a custom 3D-printed enclosure or a stacked acrylic frame with a 5-degree 'racing' tilt.
-The Control Board (PCB)
-Here's the PCB! It was engineered in KiCad to be compact and powerful. The design is centered around the XIAO RP2040 microcontroller.
-Schematic
-[Link to your Schematic Image Here]
-PCB Layout
-[Link to your PCB Layout Image Here]
-The board uses standard MX-style footprints for a responsive, mechanical feel. To keep the design efficient, a 3x3 key matrix with 1N4148 diodes is used, allowing 9 keys to be read with only 6 GPIO pins, freeing up the rest of the 'ECU' for other high-performance features.
-Firmware: The Engine Control Unit (ECU)
-The VROOOOMpad runs on KMK firmware, a CircuitPython-based firmware that's incredibly easy to customize.
-The rotary encoder is your primary dial, mapped to control system volume.
-The 9 keys are your command triggers, configured with multi-layer keymaps like a sequential gearbox. Shift up to a 'Track Mode' layer for gaming macros, or down to a 'Cruising' layer for media controls.
-The OLED dashboard displays your current layer, so you never miss a shift.
-The RGB 'Tach' LEDs provide instant visual feedback, confirming actions or highlighting your active toolset with a blast of color.
-Build Sheet (BOM):
-Here is the official parts list to build your own VROOOOMpad.
-The Engine (ECU):
-1x Seeed Studio XIAO RP2040
-The Cockpit Controls:
-9x Cherry MX style switches (Linear for speed, Tactile for precision!)
-9x Keycaps (Your preferred profile)
-1x EC11 Rotary Encoder
-9x 1N4148 Diodes
-Dashboard & Underglow:
-1x 0.91" 128x32 I2C OLED Display (GND-VCC-SCL-SDA pinout)
-16x SK6812 5050 RGB LEDs
-Chassis & Fasteners:
-1x Custom Case (3D Printed or Laser Cut)
-M3 Bolts and Heat-set inserts as required by your case design
-1x 4-pin connector for the OLED
-Extra Stuff
-Time to get off the starting line. Tune your VROOOOMpad to redline your productivity, streamline your creative process, or just get the jump on the competition. It's not just a macropad; it's a performance upgrade for your desk.
+
+### VROOOOMpad
+
+VROOOOMpad is a 9-key macropad with a rotary encoder, an OLED Display. It also has 16 SK6812 LEDs, and uses KMK firmware.
+
+It serves as a comprehensive example piece/reference for a feature-packed macropad, since it contains an implementation of every common part.
+
+**Features:**
+
+-   Designed for a custom 3D printed or laser-cut case.
+    
+-   128x32 OLED Display
+    
+-   EC11 Rotary encoder for whatever you want
+    
+-   16 SK6812 RGB LEDs for per-key lighting and effects.
+    
+-   9 Keys in a 3x3 matrix to save on controller pins.
+    
+-   KMK support! Edit your firmware with a simple text editor.
+    
+
+**CAD Model:**  
+The PCB is designed to show off my first ever pcb build. This has been a long journey and I am quite proud of my pcb.
+
+**PCB**  
+Here's my PCB! It was made in KiCad.
+
+**Schematic**  
+![enter image description here](https://drive.google.com/file/d/18cYXN9dBHsvvs-i5QxGHF7S5kgjKLjsX/view?usp=sharing)
+https://drive.google.com/file/d/18cYXN9dBHsvvs-i5QxGHF7S5kgjKLjsX/view?usp=sharing
+
+**PCB Layout**  
+![(Add your PCB layout image here)](https://drive.google.com/file/d/1or-7hfC62VdfGTGTljvyo4kLrXyLFp2b/view?usp=sharing)
+https://drive.google.com/file/d/1or-7hfC62VdfGTGTljvyo4kLrXyLFp2b/view?usp=sharing
+
+I used standard MX-style footprints for the keyswitches. A key design feature is the 3x3 key matrix using 1N4148 diodes, which allows 9 keys to be read using only 6 GPIO pins.
+
+**Firmware Overview**  
+This hackpad uses KMK firmware for everything.
+
+-   The rotary encoder changes volume.
+    
+-   The 9 keys are set up with multiple layers for different shortcut menus and macros.
+    
+-   The OLED displays the currently active layer.
+    
+
+I might add more complex macros and lighting effects in the future! That's it for now.
+
+**BOM:**  
+Here should be everything you need to make this hackpad.
+
+-   9x Cherry MX Switches (or clones)
+    
+-   9x Keycaps
+        
+-   9x 1N4148 DO-35 Diodes
+    
+-   16x SK6812 5050 LEDs
+    
+-   1x 0.91" 128x32 I2C OLED Display
+    
+-   1x EC11 Rotary Encoder
+    
+-   1x Seeed Studio XIAO RP2040
+    
+-   1x Case
+    
+
+**Extra stuff**  
+Get through work as fast as 1..2..VROOOOOM. Just as fast as a Twin Turbo 1st Gen Audi R8 V10
+Time to get off the starting line and tune your VROOOOMpad to redline your productivity.
