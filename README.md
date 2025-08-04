@@ -3,11 +3,11 @@
 
 VROOOOMpad is a 9-key macropad with a rotary encoder, an OLED Display. It also has 16 SK6812 LEDs, and uses KMK firmware.
 
-It serves as a comprehensive example piece/reference for a feature-packed macropad, since it contains an implementation of every common part.
+It contains an implementation of every common part, and achieves my goal of being able to understand and use some of the comon inputs and outputs associated with a macropad.
 
 **Features:**
 
--   Designed for a custom 3D printed or laser-cut case.
+-   Designed for a custom 3D printed case.
     
 -   128x32 OLED Display
     
@@ -17,7 +17,7 @@ It serves as a comprehensive example piece/reference for a feature-packed macrop
     
 -   9 Keys in a 3x3 matrix to save on controller pins.
     
--   KMK support! Edit your firmware with a simple text editor.
+-   KMK support! 
     
 
 **CAD Model:**  
@@ -34,7 +34,7 @@ Here's my PCB! It was made in KiCad.
 **PCB Layout**  
 <img src=IMAGES/PCBpic alt="PCB" width="500"/>
 
-I used standard MX-style footprints for the keyswitches. A key design feature is the 3x3 key matrix using 1N4148 diodes, which allows 9 keys to be read using only 6 GPIO pins.
+I used MX-style footprints for the keyswitches. A key design feature is the 3x3 key matrix using 1N4148 diodes, which allows 9 keys to be read using only 6 GPIO pins.
 
 **Firmware Overview**  
 This hackpad uses KMK firmware for everything.
@@ -49,7 +49,7 @@ This hackpad uses KMK firmware for everything.
 I might add more complex macros and lighting effects in the future! That's it for now.
 
 **BOM:**  
-Here should be everything you need to make this hackpad.
+Everything you need to make this hackpad.
 
 -   9x Cherry MX Switches (or clones)
     
